@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Ex04 {
     public static void executar(){
-        Scanner leitor = new Scanner(System.in);
+       
 
         Dolar dollar = new Dolar();
 
@@ -18,7 +18,7 @@ public class Ex04 {
 
 
 
-        leitor.close();
+        
     }
 
 }
