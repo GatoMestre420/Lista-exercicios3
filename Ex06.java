@@ -1,10 +1,10 @@
 // 6. Faça um programa que receba o preço de custo de um produto e mostre o valor de venda. Sabe-se que o preço de custo receberá um acréscimo de acordo com um percentual informado pelousuário.
 
-import java.util.Scanner;
+
 
 public class Ex06 {
     public static void executar(){
-        Scanner leitor = new Scanner(System.in);
+        
 
         Produto6 produto = new Produto6();
 
@@ -20,7 +20,7 @@ public class Ex06 {
 
 
 
-        leitor.close();
+        
     }
 
 }

@@ -1,6 +1,6 @@
 // 4. Elaborar um programa que efetue a apresentação do valor da conversão em real (R$) de umvalor lido em dólar (US$). O programa deverá solicitar o valor da cotação do dólar e também aquantidade de dólares disponíveis com o usuário
 
-import java.util.Scanner;
+
 
 public class Ex04 {
     public static void executar(){
