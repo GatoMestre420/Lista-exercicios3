@@ -14,16 +14,16 @@ public class Ex23 {
     
         // Leitura dos dados da pessoa
         System.out.print("Digite o nome da pessoa: ");
-        String nome = Prompt.lerLinha();
+        pessoa.setNome(Prompt.lerLinha());
 
         System.out.print("Digite o sexo da pessoa (M/F): ");
-        char sexo = leitor.next().charAt(0);
+        pessoa.setSexo(Prompt.leitor());
 
         System.out.print("Digite a altura da pessoa (em metros): ");
-        double altura = Prompt.lerDecimal();
+        pessoa.setAltura(Prompt.lerDecimal());
 
         System.out.print("Digite a idade da pessoa: ");
-        int idade = Prompt.lerInteiro();
+        pessoa.setIdade(Prompt.lerInteiro());
 
         // Criando objeto Pessoa com os dados informados
         Pessoa23 pessoa = new Pessoa23(nome, sexo, altura, idade);

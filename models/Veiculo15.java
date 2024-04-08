@@ -9,6 +9,38 @@ public class Veiculo15 {
         this.valor = valor;
     }
 
+
+    
+
+    public String getCombustivel() {
+        return combustivel;
+    }
+
+
+
+
+    public double getValor() {
+        return valor;
+    }
+
+
+    
+
+
+    public void setCombustivel(String combustivel) {
+        this.combustivel = combustivel;
+    }
+
+
+
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+
+
+
     public double calcularDesconto() {
         if (combustivel.equalsIgnoreCase("álcool")) {
             return valor * 0.25;
@@ -21,8 +53,6 @@ public class Veiculo15 {
         }
     }
 
-    public double getValorComDesconto() {
-        return valor - calcularDesconto();
-    }
+
 
 }

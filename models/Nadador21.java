@@ -7,6 +7,8 @@ public class Nadador21 {
         this.idade = idade;
     }
 
+    
+
     public String classificarCategoria() {
         if (idade >= 5 && idade <= 7) {
             return "Infantil A";
@@ -21,6 +23,18 @@ public class Nadador21 {
         } else {
             return "Idade fora da faixa etária";
         }
+    }
+
+
+
+    public int getIdade() {
+        return idade;
+    }
+
+
+
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
 
 }

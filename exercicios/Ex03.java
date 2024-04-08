@@ -10,16 +10,16 @@ public class Ex03 {
         Vendedor vendedor = new Vendedor();
 
         System.out.println("informe o nome do vendedor: ");
-        vendedor.nome = Prompt.lerLinha();
+        vendedor.setNome(Prompt.lerLinha());
         System.out.println("Informe o salario fixo :");
-        vendedor.salarioFix = Prompt.lerDecimal();
+        vendedor.setSalarioFix(Prompt.lerLinha());
         System.out.println("Informe o total de vendas do vendedor: ");
-        vendedor.totalVendas = Prompt.lerDecimal();
+        vendedor.setTotalVendas(Prompt.lerLinha());
 
-        System.out.println("Nome: " + vendedor.nome);
-        System.out.println("Salario fixo: " + vendedor.salarioFix);
-        System.out.println("Total de vendas: " + vendedor.totalVendas);
-        System.out.println("Salario final: " + vendedor.calcSalario());
+        System.out.println("Nome: " + vendedor.getNome());
+        System.out.println("Salario fixo: " + vendedor.getSalarioFix());
+        System.out.println("Total de vendas: " + vendedor.getTotalVendas());
+        System.out.println("Salario final: " + vendedor.getCalcSalario());
 
     }
 

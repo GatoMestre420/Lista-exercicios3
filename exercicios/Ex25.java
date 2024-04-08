@@ -12,22 +12,22 @@ public class Ex25 {
 
                 // Leitura dos dados do estudante
                 System.out.print("Digite o nome do estudante: ");
-                String nome = Prompt.lerLinha();
+                estudante.setNome(Prompt.lerLinha());
         
                 System.out.print("Digite o número de matrícula do estudante: ");
-                int numeroMatricula = Prompt.lerInteiro();
+                estudante.setNumeroMatricula(Prompt.lerInteiro());
         
                 System.out.print("Digite a nota do trabalho de laboratório (0 a 10): ");
-                double notaLaboratorio = Prompt.lerDecimal();
+                estudante.setNotaLaboratorio(Prompt.lerDecimal());
         
                 System.out.print("Digite a nota da avaliação semestral (0 a 10): ");
-                double notaAvaliacaoSemestral = Prompt.lerDecimal();
+                estudante.setNotaAvaliacaoSemestral(Prompt.lerDecimal());
         
                 System.out.print("Digite a nota do exame final (0 a 10): ");
-                double notaExameFinal = Prompt.lerDecimal();
+                estudante.setNotaExameFinal(Prompt.lerDecimal());
         
                 // Criando objeto Estudante com os dados informados
-                Estudante25 estudante = new Estudante25(nome, numeroMatricula, notaLaboratorio, notaAvaliacaoSemestral, notaExameFinal);
+                Estudante25 estudante = new Estudante25(String nome, int numeroMatricula, double notaLaboratorio, double notaAvaliacaoSemestral, double notaExameFinal);
         
                 // Calculando a nota final e classificação do estudante
                 double notaFinal = estudante.calcularNotaFinal();
@@ -36,7 +36,7 @@ public class Ex25 {
                 // Exibindo os dados do estudante
                 System.out.println("\nNome do estudante: " + estudante.getNome());
                 System.out.println("Número de matrícula: " + estudante.getNumeroMatricula());
-                System.out.println("Nota final: " + notaFinal);
+                System.out.println("Nota final: " + estudante.getNotaExameFinal());
                 System.out.println("Classificação: " + classificacao);
 
         leitor.close();

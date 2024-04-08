@@ -43,4 +43,39 @@ public class Estudante25 {
         return numeroMatricula;
     }
 
+    public double getNotaLaboratorio() {
+        return notaLaboratorio;
+    }
+
+    public double getNotaAvaliacaoSemestral() {
+        return notaAvaliacaoSemestral;
+    }
+
+    public double getNotaExameFinal() {
+        return notaExameFinal;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setNumeroMatricula(int numeroMatricula) {
+        this.numeroMatricula = numeroMatricula;
+    }
+
+    public void setNotaLaboratorio(double notaLaboratorio) {
+        this.notaLaboratorio = notaLaboratorio;
+    }
+
+    public void setNotaAvaliacaoSemestral(double notaAvaliacaoSemestral) {
+        this.notaAvaliacaoSemestral = notaAvaliacaoSemestral;
+    }
+
+    public void setNotaExameFinal(double notaExameFinal) {
+        this.notaExameFinal = notaExameFinal;
+    }
+
+    
+
+
 }

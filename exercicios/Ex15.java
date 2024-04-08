@@ -15,14 +15,14 @@ public class Ex15 {
 
         while (true) {
             System.out.print("Informe o tipo de combustível (álcool/gasolina/diesel) ou digite '0' para encerrar: ");
-            String combustivel = Prompt.lerLinha();
+            veiculo.setCombustivel(Prompt.lerLinha());
 
             if (combustivel.equals("0")) {
                 break; // Encerra a entrada de dados se o combustível for zero
             }
 
             System.out.print("Informe o valor do veículo: ");
-            double valor = Double.parseDouble(leitor.nextLine());
+            veiculo.setValor(Prompt.lerDecimal());
 
             Veiculo15 veiculo = new Veiculo15(combustivel, valor);
             double desconto = veiculo.calcularDesconto();

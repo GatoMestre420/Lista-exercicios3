@@ -10,7 +10,7 @@ public class Ex05 {
 
         Compra05 produto = new Compra05();
         System.out.println("Informe o valor da compra: ");
-        produto.valor = Prompt.lerDecimal();
+        produto.setValor(Prompt.lerDecimal());
 
         System.out.println("O valor das 5 prestações fica: " + produto.calcPrest());
 

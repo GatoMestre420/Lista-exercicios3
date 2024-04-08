@@ -16,17 +16,17 @@ public class Ex11 {
 
         for(int i = 0; i < 10; i++){
             System.out.println("Informe o nome da pessoa " + (i+1) + ": ");
-            String nome  = Prompt.lerLinha();
+            pessoas.setNome(Prompt.lerLinha());
 
             System.out.println("informe o sexo da pessoa (M/F) " + (i+1) + ": ");
-            char sexo = leitor.next().charAt(0);
+            pessoa.setSexo(Prompt.lerLinha());
             Prompt.lerLinha(); //limpar o buffer do scanner;
 
-            pessoas[i] = new Pessoas11(nome, sexo);
+            Pessoas11[i] = new Pessoas11(nome, sexo);
 
-            if(sexo == 'M' || sexo == 'm'){
+            if(pessoa.getSexo() == 'M' || pessoa.getSexo() == 'm'){
                 totalHomens++;
-            }else if(sexo == 'f' || sexo == 'F'){
+            }else if(pessoa.getSexo() == 'f' || pessoa.getSexo() == 'F'){
                 totalMulheres++;
             }
         }

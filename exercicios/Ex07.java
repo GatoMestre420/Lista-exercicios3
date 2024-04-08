@@ -11,9 +11,9 @@ public class Ex07 {
         Carro carro = new Carro();
 
         System.out.println("informe o custo de fabrica do carro: ");
-        carro.custoDeFabrica = Prompt.lerDecimal();
+        carro.setCustoDeFabrica(Prompt.lerDecimal());
 
-        System.out.println("Custo de fabrica: " + String.format("%.2f",carro.custoDeFabrica));
+        System.out.println("Custo de fabrica: " + String.format("%.2f",carro.getCustoDeFabrica()));
         System.out.println("Custo Final: " + String.format("%.2f", carro.calcCustoFinal()));
 
 

@@ -13,8 +13,8 @@ public class Ex09 {
         
         for(int i = 0; i < 10; i++){
             System.out.println("Informe o " + (i+1) + "º número: ");
-            numerico.numero[i] = Prompt.lerInteiro();
-            if(numerico.numero[i] >= 10 && numerico.numero[i] <= 150){
+            numerico.setNumero[i] = Prompt.lerInteiro();
+            if(numerico.setNumero([i]) >= 10 && numerico.setNumero([i]) <= 150){
                 n++;
             }
         }

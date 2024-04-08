@@ -22,18 +22,18 @@ public class Ex13 {
             System.out.println("\nInforme os dados da pessoa " + (i + 1) + ":");
 
             System.out.print("Nome: ");
-            String nome = Prompt.lerLinha();
+            pessoa.setNome(Prompt.lerLinha());
 
             System.out.print("Sexo (M/F): ");
-            char sexo = leitor.next().charAt(0);
+            pessoa.setSexo(Prompt.lerLinha());
             leitor.nextLine(); // Limpar o buffer do scanner
 
             System.out.print("Idade: ");
-            int idade = Prompt.lerInteiro();
+            pessoa.setIdade(Prompt.lerInteiro());
             leitor.nextLine(); // Limpar o buffer do scanner
 
             System.out.print("Saúde (true/false): ");
-            boolean saude = leitor.nextBoolean();
+            pessoa.setSaude() = leitor.nextBoolean();
             leitor.nextLine(); // Limpar o buffer do scanner
 
             Pessoa13 pessoa = new Pessoa13(nome, sexo, idade, saude);

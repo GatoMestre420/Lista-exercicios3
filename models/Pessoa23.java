@@ -26,4 +26,34 @@ public class Pessoa23 {
         return nome;
     }
 
+    public char getSexo() {
+        return sexo;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    
+
 }
