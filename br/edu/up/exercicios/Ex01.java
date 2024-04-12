@@ -1,8 +1,9 @@
 package br.edu.up.exercicios;
 // 1. Escrever um programa que leia o nome de um aluno e as notas das três provas que ele obteveno semestre. No final informar o nome do aluno e a sua média (aritmética).
 
+import br.edu.up.Prompt;
 import br.edu.up.models.Aluno;
-import br.edu.up.models.Prompt;
+
 
 public class Ex01 {
     public static void executar() {

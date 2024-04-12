@@ -4,7 +4,7 @@ package br.edu.up.exercicios;
 import java.util.Scanner;
 
 import br.edu.up.models.Pessoas11;
-import br.edu.up.models.Prompt;
+import br.edu.up..Prompt;
 
 public class Ex11 {
     public static void executar(){

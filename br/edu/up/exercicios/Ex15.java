@@ -3,7 +3,7 @@ package br.edu.up.exercicios;
 
 import java.util.Scanner;
 
-import br.edu.up.models.Prompt;
+import br.edu.up.Prompt;
 import br.edu.up.models.Veiculo15;
 
 public class Ex15 {

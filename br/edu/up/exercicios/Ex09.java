@@ -2,7 +2,7 @@ package br.edu.up.exercicios;
 // Ler 80 números e ao final informar quantos número(s) est(á)ão no intervalo entre 10 (inclusive)e 150 (inclusive).
 
 import br.edu.up.models.IntervaloNumerico;
-import br.edu.up.models.Prompt;
+import br.edu.up.Prompt;
 
 public class Ex09 {
     public static void executar(){

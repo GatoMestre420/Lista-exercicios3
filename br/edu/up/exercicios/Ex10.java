@@ -2,7 +2,7 @@ package br.edu.up.exercicios;
 // Faça um programa que receba a idade de um número finito de pessoas e mostre mensageminformando “maior de idade” e “menor de idade” para cada pessoa. Considerar a pessoa com 18anos como maior de idade
 
 import br.edu.up.models.Pessoas;
-import br.edu.up.models.Prompt;
+import br.edu.up.Prompt;
 
 public class Ex10 {
     public static void executar(){

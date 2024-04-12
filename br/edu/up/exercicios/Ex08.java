@@ -1,7 +1,7 @@
 package br.edu.up.exercicios;
 
 import br.edu.up.models.Aluno;
-import br.edu.up.models.Prompt;
+import br.edu.up.Prompt;
 
 public class Ex08 {
     public static void executar(){

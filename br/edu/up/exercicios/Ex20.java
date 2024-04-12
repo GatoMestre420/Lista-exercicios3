@@ -4,7 +4,7 @@ package br.edu.up.exercicios;
 import java.util.Scanner;
 
 import br.edu.up.models.Professor20;
-import br.edu.up.models.Prompt;
+import br.edu.up.Prompt;
 
 public class Ex20 {
     public static void executar(){
