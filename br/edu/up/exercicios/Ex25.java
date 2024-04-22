@@ -29,7 +29,6 @@ public class Ex25 {
         estudante.setNotaExameFinal(Prompt.lerDecimal());
 
         // Calculando a nota final e classificação do estudante
-        double notaFinal = estudante.calcularNotaFinal();
         String classificacao = estudante.classificarNota();
 
         // Exibindo os dados do estudante
