@@ -1,8 +1,24 @@
 package br.edu.up.models;
-public class Dolar {
+public class Dolar { 
 
-    public double quant;
-    public double valorCot;
+    private double quant;
+    private double valorCot;
+
+    public double getQuant(){
+        return quant;
+    }
+
+    public double getValorCot(){
+        return valorCot;
+    }
+
+    public void setQuant(Double quant){
+        this.quant = quant;
+    }
+
+    public void setValorCot(Double valorCot){
+        this.valorCot = valorCot;
+    }
 
     public double calcCot(){
         return quant * valorCot;

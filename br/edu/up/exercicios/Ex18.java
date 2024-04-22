@@ -1,43 +1,32 @@
 package br.edu.up.exercicios;
 // Faça um programa que receba o nome a idade, o sexo e salário fixo de um funcionário. Mostreo nome e o salário líquido acrescido do abono conforme o sexo e a idade
 
-import java.util.Scanner;
 
 import br.edu.up.models.Funcionario18;
-import br.edu.up.models.Prompt;
+import br.edu.up.Prompt;
 
 public class Ex18 {
     public static void executar(){
-        Scanner leitor = new Scanner(System.in);
+
+        Funcionario18 funcionario = new Funcionario18();
+
 
         System.out.print("Digite o nome do funcionário: ");
-        String nome = Prompt.lerLinha();
+        funcionario.setNome(Prompt.lerLinha());
 
         System.out.print("Digite a idade do funcionário: ");
-        int idade = Prompt.lerInteiro();
+        funcionario.setIdade(Prompt.lerInteiro());
 
         System.out.print("Digite o sexo do funcionário (M/F): ");
-        char sexo = leitor.next().charAt(0);
+        funcionario.setSexo(Prompt.lerLinha().charAt(0));
 
         System.out.print("Digite o salário fixo do funcionário: ");
-        double salarioFixo = Prompt.lerDecimal();
+        funcionario.setSalarioFixo(Prompt.lerDecimal());
 
-        Funcionario18 funcionario = new Funcionario18(nome, idade, sexo, salarioFixo);
 
         System.out.println("\nNome do funcionário: " + funcionario.getNome());
         System.out.println("Salário líquido acrescido do abono: " + funcionario.getSalarioLiquido());
 
-
-
-
-
-
-
-
-
-
-
-        leitor.close();
     }
 
 }

@@ -4,11 +4,6 @@ public class Carro12 {
     private int ano;
     private double preco;
 
-    public Carro12(int ano, double preco) {
-        this.ano = ano;
-        this.preco = preco;
-
-    }
 
     public double calcularDesconto() {
         if (ano <= 2000) {
@@ -25,6 +20,20 @@ public class Carro12 {
     public int getAno() {
         return ano;
     }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    
 
 }
 

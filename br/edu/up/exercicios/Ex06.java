@@ -11,9 +11,9 @@ public class Ex06 {
         Produto6 produto = new Produto6();
 
         System.out.println("Informe o preço do produto: ");
-        produto.precoCusto = Prompt.lerDecimal();
+        produto.setPrecoCusto(Prompt.lerDecimal()) ;
         System.out.println("Informe o Percentual de acrescimo: ");
-        produto.acrescimo = Prompt.lerDecimal();
+        produto.setAcrescimo(Prompt.lerDecimal());
         
         System.out.println("O valor final de venda desse produto é de: " + produto.calcValorDeVenda());
 

@@ -1,15 +1,25 @@
 package br.edu.up.models;
+
 public class Professor20 {
 
     private int nivel;
     private double valorHoraAula;
+    private int horasAula;
 
-    public Professor20(int nivel) {
-        this.nivel = nivel;
-        definirValorHoraAula();
+    public int getNivel() {
+        return nivel;
     }
 
-    private void definirValorHoraAula() {
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+        setValorHoraAula(nivel); // Call the method to set the hourly rate when the level is set
+    }
+
+    public double getValorHoraAula() {
+        return valorHoraAula;
+    }
+
+    private void setValorHoraAula(int nivel) { // Change return type to void
         switch (nivel) {
             case 1:
                 valorHoraAula = 12.00;
@@ -26,8 +36,15 @@ public class Professor20 {
         }
     }
 
-    public double calcularSalario(int horasAula) {
+    public double calcularSalario() {
         return horasAula * valorHoraAula;
     }
 
+    public int getHorasAula() {
+        return horasAula;
+    }
+
+    public void setHorasAula(int horasAula) {
+        this.horasAula = horasAula;
+    }
 }

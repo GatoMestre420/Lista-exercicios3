@@ -5,10 +5,22 @@ public class Pretendente26 {
     private int idade;
     private String grupoRisco;
 
-    public Pretendente26(String nome, int idade, String grupoRisco) {
+    
+
+    public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    public void setGrupoRisco(String grupoRisco) {
         this.grupoRisco = grupoRisco;
+    }
+
+    public Pretendente26() {
+        
     }
 
     public String determinarCategoria() {

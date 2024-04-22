@@ -4,8 +4,12 @@ public class Produto14 {
     private double precoCusto;
     private double precoVenda;
 
-    public Produto14(double precoCusto, double precoVenda) {
+
+    public void setPrecoCusto(double precoCusto) {
         this.precoCusto = precoCusto;
+    }
+
+    public void setPrecoVenda(double precoVenda) {
         this.precoVenda = precoVenda;
     }
 

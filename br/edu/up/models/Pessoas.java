@@ -1,12 +1,13 @@
 package br.edu.up.models;
-import java.util.Scanner;
 
-class Pessoas {
-    int idade;
 
-    public Pessoas(int idade) {
-        this.idade = idade;
-    }
+    public class Pessoas {
+    private int idade;
+    private int numPessoas;
+
+    
+
+    
 
     public void verificarIdade() {
         if (idade >= 18) {
@@ -14,5 +15,29 @@ class Pessoas {
         } else {
             System.out.println("Menor de idade");
         }
+    }
+
+
+
+    public int getIdade() {
+        return idade;
+    }
+
+
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+
+
+    public int getNumPessoas() {
+        return numPessoas;
+    }
+
+
+
+    public void setNumPessoas(int numPessoas) {
+        this.numPessoas = numPessoas;
     }
 }

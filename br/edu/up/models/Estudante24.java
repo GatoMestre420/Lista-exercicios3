@@ -5,10 +5,34 @@ public class Estudante24 {
     private double notaAvaliacaoSemestral;
     private double notaExameFinal;
 
-    public Estudante24(double notaLaboratorio, double notaAvaliacaoSemestral, double notaExameFinal) {
+    
+
+    public double getNotaLaboratorio() {
+        return notaLaboratorio;
+    }
+
+    public void setNotaLaboratorio(double notaLaboratorio) {
         this.notaLaboratorio = notaLaboratorio;
+    }
+
+    public double getNotaAvaliacaoSemestral() {
+        return notaAvaliacaoSemestral;
+    }
+
+    public void setNotaAvaliacaoSemestral(double notaAvaliacaoSemestral) {
         this.notaAvaliacaoSemestral = notaAvaliacaoSemestral;
+    }
+
+    public double getNotaExameFinal() {
+        return notaExameFinal;
+    }
+
+    public void setNotaExameFinal(double notaExameFinal) {
         this.notaExameFinal = notaExameFinal;
+    }
+
+    public Estudante24() {
+        
     }
 
     public double calcularNotaFinal() {

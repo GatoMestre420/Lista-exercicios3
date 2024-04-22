@@ -2,15 +2,26 @@ package br.edu.up.models;
 public class Funcionario16 {
 
     private double salario;
-    private final double salarioMinimo = 1100; // Valor do salário mínimo
+    private final double salarioMinimo = 1100; 
 
-    public Funcionario16(double salario) {
-        this.salario = salario;
-    }
 
     public double getSalario() {
         return salario;
     }
+
+    
+
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
+
+
+
+    public double getSalarioMinimo() {
+        return salarioMinimo;
+    }
+
+
 
     public void aplicarReajuste() {
         if (salario < 3 * salarioMinimo) {

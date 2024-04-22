@@ -1,22 +1,25 @@
 package br.edu.up;
 
-import java.util.Scanner;
 import br.edu.up.exercicios.*;
 
 public class Programa {
     public static void main(String[] args) {
-        Scanner leitor = new Scanner(System.in);
 
         System.out.println("Lista de Exercicios 3 - CLASSES, MÉTODOS E PACOTES");
         System.out.println("----------------------------------------------------------");
 
         int n;
 
-        System.out.println("Informe o numero da atividade que deseja rodar: 1 à 26");
-        n = Prompt.lerInteiro();
+        
 
         do {
+            
+            System.out.println("Informe o numero da atividade que deseja rodar: 1 à 26");
+            n = Prompt.lerInteiro();
+
             switch (n) {
+
+                
                 case 0:
                     System.out.println("Saindo do programa...");
                     break;
@@ -154,12 +157,11 @@ public class Programa {
 
                 default:
                     System.out.println("Informe um numero de 1 à 26!");
-                    n = 0;
+            
                     break;
             }
         } while (n != 0);
 
-        leitor.close();
     }
 
 }

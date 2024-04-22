@@ -8,25 +8,32 @@ public class Ex10 {
     public static void executar(){
        
         
-        System.out.println("Quantas pessoas você deseja verificar?");
-        int numPessoas = Prompt.lerInteiro();
 
-        Pessoas[] pessoas = new Pessoas[numPessoas];
+        
 
-        for (int i = 0; i < numPessoas; i++) {
+        Pessoas[] pessoas = new Pessoas[(Prompt.lerInteiro("Quantas pessoas você deseja verificar?"))];
+
+        
+
+        for (int i = 0; i < pessoas.length; i++) {
             System.out.println("Informe a idade da pessoa " + (i + 1) + ": ");
-            int idade = Prompt.lerInteiro();
-            pessoas[i] = new Pessoas(idade);
+            pessoas[i]= new Pessoas();
+            pessoas[i].setIdade(Prompt.lerInteiro());
         }
 
         System.out.println("Resultados:");
-        for (int i = 0; i < numPessoas; i++) {
+        for (int i = 0; i < pessoas.length; i++) {
             System.out.print("Pessoa " + (i + 1) + ": ");
-            pessoas[i].verificarIdade();
+            if (pessoas[i].getIdade() >= 18) {
+                System.out.println("Maior de idade");
+            } else {
+                System.out.println("Menor de idade");
+            }
         }
-
-      
     }
 
+      
 }
+
+
 

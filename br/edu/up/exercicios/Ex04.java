@@ -11,11 +11,11 @@ public class Ex04 {
         Dolar dollar = new Dolar();
 
         System.out.println("Infome o valor da cotação do dollar: ");
-        dollar.valorCot = Prompt.lerDecimal();
+        dollar.setValorCot(Prompt.lerDecimal());
         System.out.println("Informe a quantidade para conversão : ");
-        dollar.quant = Prompt.lerDecimal();
+        dollar.setQuant(Prompt.lerDecimal());
 
-        System.out.println("O valor de $" + dollar.quant + " em reais é: " + dollar.calcCot() + "R$");
+        System.out.println("O valor de $" + dollar.getQuant() + " em reais é: " + dollar.calcCot() + "R$");
 
 
 

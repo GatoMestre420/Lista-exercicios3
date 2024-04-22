@@ -1,6 +1,6 @@
 package br.edu.up.exercicios;
 
-import br.edu.up.models.Aluno;
+import br.edu.up.models.Aluno8;
 import br.edu.up.Prompt;
 
 public class Ex08 {
@@ -8,26 +8,26 @@ public class Ex08 {
         
         java.util.Locale.setDefault(java.util.Locale.US);
 
-        Aluno aluno = new Aluno();
+        Aluno8 aluno = new Aluno8();
 
         System.out.println("Informe o nome: ");
-        aluno.nome = Prompt.lerLinha();
+        aluno.setNome(Prompt.lerLinha()) ;
         System.out.println("Informe a primeira nota: ");
-        aluno.nota1 = Prompt.lerDecimal();
+        aluno.setNota1(Prompt.lerDecimal()) ;
         System.out.println("Informe a segunda nota: ");
-        aluno.nota2 = Prompt.lerDecimal();
+        aluno.setNota2(Prompt.lerDecimal()) ;
         System.out.println("Informe a terceira nota: ");
-        aluno.nota3 = Prompt.lerDecimal();
-
-        System.out.println();
-        System.out.println(aluno.toString()); // ERRO NO toString tirar a dúvida na sala!
-
-
-
-
-
-
+        aluno.setNota3(Prompt.lerDecimal());
+        Double media = (aluno.getNota1()+aluno.getNota2()+aluno.getNota3())/3;
         
-    }
 
+        if(media >= 7){
+            Prompt.imprimir("Aluno: " + aluno.getNome() + " MÉDIA: " + media + " APROVADO!");
+        }else if (media > 5.1 && media < 6.9) {
+            Prompt.imprimir("Aluno: " + aluno.getNome() + " MÉDIA: " + media + " RECUPERAÇÃO!");
+            
+        } else {
+            Prompt.imprimir("Aluno: " + aluno.getNome() + " MÉDIA: " + media + " REPROVADO!");
+        }
+    }
 }
