@@ -5,6 +5,11 @@ public class Pessoa23 {
     private double altura;
     private int idade;
 
+    
+
+    public Pessoa23() {
+    }
+
     public Pessoa23(String nome, char sexo, double altura, int idade) {
         this.nome = nome;
         this.sexo = sexo;

@@ -12,14 +12,14 @@ public class Ex03 {
         System.out.println("informe o nome do vendedor: ");
         vendedor.setNome(Prompt.lerLinha());
         System.out.println("Informe o salario fixo :");
-        //vendedor.setSalarioFix(Prompt.lerLinha());
+        vendedor.setSalarioFix(Prompt.lerDecimal());
         System.out.println("Informe o total de vendas do vendedor: ");
-        //vendedor.setTotalVendas(Prompt.lerLinha());
+        vendedor.setTotalVendas(Prompt.lerDecimal());
 
         System.out.println("Nome: " + vendedor.getNome());
         System.out.println("Salario fixo: " + vendedor.getSalarioFix());
         System.out.println("Total de vendas: " + vendedor.getTotalVendas());
-        //System.out.println("Salario final: " + vendedor.getCalcSalario());
+        System.out.println("Salario final: " + vendedor.calcSalario());
 
     }
 

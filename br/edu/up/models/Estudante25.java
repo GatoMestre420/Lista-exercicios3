@@ -7,6 +7,11 @@ public class Estudante25 {
     private double notaAvaliacaoSemestral;
     private double notaExameFinal;
 
+
+    
+    public Estudante25() {
+    }
+
     public Estudante25(String nome, int numeroMatricula, double notaLaboratorio, double notaAvaliacaoSemestral, double notaExameFinal) {
         this.nome = nome;
         this.numeroMatricula = numeroMatricula;

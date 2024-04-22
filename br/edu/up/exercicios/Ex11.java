@@ -1,7 +1,6 @@
 package br.edu.up.exercicios;
 // Escrever um programa que leia o nome e o sexo de 56 pessoas e informe o nome e se ela éhomem ou mulher. No final informe total de homens e de mulheres
 
-
 import br.edu.up.models.Pessoas11;
 import br.edu.up.Prompt;
 

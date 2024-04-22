@@ -1,11 +1,15 @@
 package br.edu.up.models;
+
 public class Automovel {
 
     private double distancia;
     private double totalCombustivelGasto;
 
     public double calcConsumoMedio() {
-        return distancia / totalCombustivelGasto;
+        return (distancia / totalCombustivelGasto);
+    }
+
+    public Automovel() {
     }
 
     // Getters
@@ -23,7 +27,7 @@ public class Automovel {
         this.distancia = distancia;
     }
 
-    public void setTotalCombustivelGasto(double totalCombustivelGasto){
+    public void setTotalCombustivelGasto(double totalCombustivelGasto) {
         this.totalCombustivelGasto = totalCombustivelGasto;
     }
 }
