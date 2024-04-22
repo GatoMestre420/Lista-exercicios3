@@ -2,18 +2,17 @@ package br.edu.up.models;
 public class Pessoas11 {
     
     private String nome;
-    private char sexo;
+    private String sexo;
 
-    public Pessoas11(String nome, char sexo){
-        this.nome = nome;
-        this.sexo = sexo;
+    public Pessoas11(){
+        
     }
 
     public String getNome(){
         return nome;
     }
 
-    public char getSexo(){
+    public String getSexo(){
         return sexo;
     }
 
@@ -21,7 +20,7 @@ public class Pessoas11 {
         this.nome = nome;
     }
 
-    public void setSexo(char sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 

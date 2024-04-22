@@ -1,27 +1,23 @@
 package br.edu.up.models;
+
+
 public class Pessoa13 {
 
     private String nome;
-    private char sexo;
+    private String sexo;
     private int idade;
-    private boolean saude;
+    private int saude;
+    private int totalAptos;
 
-    public Pessoa13(String nome, char sexo, int idade, boolean saude) {
-        this.nome = nome;
-        this.sexo = sexo;
-        this.idade = idade;
-        this.saude = saude;
-    }
+    public Pessoa13() {
 
-    public boolean estaApto() {
-        return idade >= 18 && saude;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public char getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
@@ -29,7 +25,7 @@ public class Pessoa13 {
         return idade;
     }
 
-    public boolean getSaude() {
+    public int getSaude() {
         return saude;
     }
 
@@ -37,7 +33,7 @@ public class Pessoa13 {
         this.nome = nome;
     }
 
-    public void setSexo(char sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
     }
 
@@ -45,10 +41,23 @@ public class Pessoa13 {
         this.idade = idade;
     }
 
-    public void setSaude(boolean saude) {
+    public void setSaude(int saude) {
         this.saude = saude;
+
+
+    }
+    
+    public int getTotalAptos() {
+        return totalAptos;
+    }
+
+    public void setTotalAptos(int totalAptos) {
+        this.totalAptos = totalAptos;
+    }
+
     }
 
     
+    
 
-}
+

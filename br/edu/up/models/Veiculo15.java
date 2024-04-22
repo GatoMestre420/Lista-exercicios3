@@ -3,13 +3,12 @@ public class Veiculo15 {
 
     private String combustivel;
     private double valor;
+    public Object getCombustivel;
 
-    public Veiculo15(String combustivel, double valor) {
-        this.combustivel = combustivel;
-        this.valor = valor;
+    public Veiculo15() {
     }
 
-
+    
     
 
     public String getCombustivel() {

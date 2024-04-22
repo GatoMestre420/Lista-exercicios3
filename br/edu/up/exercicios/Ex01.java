@@ -9,9 +9,6 @@ public class Ex01 {
     public static void executar() {
 
         Aluno novoAluno = new Aluno();
-        Aluno nota1 = new Aluno();
-        Aluno nota2 = new Aluno();
-        Aluno nota3 = new Aluno();
 
         System.out.println("informe o nome do aluno: ");
         novoAluno.setNome(Prompt.lerLinha());
@@ -25,7 +22,7 @@ public class Ex01 {
         System.out.println("Informe a terceira nota do aluno:  ");
         novoAluno.setNota3(Prompt.lerDecimal());
 
-        double media = novoAluno.calcularMedia();
+        novoAluno.calcularMedia();
 
         System.out.println("A média do aluno " + novoAluno.getNome() + " é " + novoAluno.calcularMedia());
 

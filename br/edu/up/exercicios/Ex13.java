@@ -1,57 +1,52 @@
 package br.edu.up.exercicios;
 // Escrever um programa que leia os dados de “N” pessoas (nome, sexo, idade e saúde) e informese está apta ou não para cumprir o serviço militar obrigatório. Informe os totais.
 
-import java.util.Scanner;
 
 import br.edu.up.models.Pessoa13;
 import br.edu.up.Prompt;
 
 public class Ex13 {
     public static void executar(){
-        Scanner leitor = new Scanner(System.in);
 
 
         System.out.print("Quantas pessoas deseja verificar? ");
         int numPessoas = Prompt.lerInteiro();
-        leitor.nextLine(); // Limpar o buffer do scanner
-
         int totalAptos = 0;
-        int totalHomens = 0;
+
+        
+        Pessoa13[] pessoas = new Pessoa13[numPessoas];
 
         for (int i = 0; i < numPessoas; i++) {
+            pessoas[i] = new Pessoa13();
             System.out.println("\nInforme os dados da pessoa " + (i + 1) + ":");
 
             System.out.print("Nome: ");
-            pessoa.setNome(Prompt.lerLinha());
+            pessoas[i].setNome(Prompt.lerLinha());
 
             System.out.print("Sexo (M/F): ");
-            pessoa.setSexo(Prompt.lerLinha());
-            leitor.nextLine(); // Limpar o buffer do scanner
+            pessoas[i].setSexo(Prompt.lerLinha());
+           
 
             System.out.print("Idade: ");
-            pessoa.setIdade(Prompt.lerInteiro());
-            leitor.nextLine(); // Limpar o buffer do scanner
+            pessoas[i].setIdade(Prompt.lerInteiro());
 
-            System.out.print("Saúde (true/false): ");
-            pessoa.setSaude() = leitor.nextBoolean();
-            leitor.nextLine(); // Limpar o buffer do scanner
+            System.out.print("Saúde (1 = Bom / 2 = Ruim): ");
+            pessoas[i].setSaude(Prompt.lerInteiro());
 
-            Pessoa13 pessoa = new Pessoa13(nome, sexo, idade, saude);
+            
 
-            if (pessoa.estaApto()) {
+            if (pessoas[i].getSaude() == 1 && pessoas[i].getSexo().equals("M") && pessoas[i].getIdade() >= 18) {
                 totalAptos++;
             }
+            
 
-            if (pessoa.getSexo() == 'M' || pessoa.getSexo() == 'm') {
-                totalHomens++;
-            }
+            
         }
 
         System.out.println("\nTotal de pessoas aptas para o serviço militar: " + totalAptos);
-        System.out.println("Total de homens: " + totalHomens);
 
 
-        leitor.close();
     }
+
 
 }
