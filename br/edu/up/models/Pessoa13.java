@@ -4,17 +4,35 @@ public class Pessoa13 {
     private String nome;
     private char sexo;
     private int idade;
-    private boolean saude;
+    private String saude;
 
-    public Pessoa13(String nome, char sexo, int idade, boolean saude) {
+    public Pessoa13(String nome, char sexo, int idade, String saude) {
         this.nome = nome;
         this.sexo = sexo;
         this.idade = idade;
         this.saude = saude;
     }
 
-    public boolean estaApto() {
-        return idade >= 18 && saude;
+    
+
+    public Pessoa13() {
+    }
+
+
+
+    public Pessoa13(int idade, String saude) {
+        this.idade = idade;
+        this.saude = saude;
+    }
+
+
+
+    public String estaApto(int idade, String saude) {
+        if(idade >= 18 && saude == 1){
+            return("Está apto");
+        }else{
+            return ("Não está apto");
+        }
     }
 
     public String getNome() {
@@ -29,7 +47,7 @@ public class Pessoa13 {
         return idade;
     }
 
-    public boolean getSaude() {
+    public String getSaude() {
         return saude;
     }
 
@@ -45,7 +63,7 @@ public class Pessoa13 {
         this.idade = idade;
     }
 
-    public void setSaude(boolean saude) {
+    public void setSaude(String saude) {
         this.saude = saude;
     }
 

@@ -3,6 +3,7 @@ package br.edu.up;
 import br.edu.up.exercicios.*;
 
 public class Programa {
+
     public static void main(String[] args) {
 
         System.out.println("Lista de Exercicios 3 - CLASSES, MÉTODOS E PACOTES");
@@ -10,16 +11,13 @@ public class Programa {
 
         int n;
 
-        
-
         do {
-            
+
             System.out.println("Informe o numero da atividade que deseja rodar: 1 à 26");
             n = Prompt.lerInteiro();
 
             switch (n) {
 
-                
                 case 0:
                     System.out.println("Saindo do programa...");
                     break;
@@ -157,7 +155,7 @@ public class Programa {
 
                 default:
                     System.out.println("Informe um numero de 1 à 26!");
-            
+
                     break;
             }
         } while (n != 0);

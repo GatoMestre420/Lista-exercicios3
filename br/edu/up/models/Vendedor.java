@@ -39,4 +39,6 @@ public class Vendedor {
         return salarioFix + (totalVendas * 0.15);
     }
 
+    
+
 }

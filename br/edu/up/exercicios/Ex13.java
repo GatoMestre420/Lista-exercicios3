@@ -1,19 +1,18 @@
 package br.edu.up.exercicios;
 // Escrever um programa que leia os dados de “N” pessoas (nome, sexo, idade e saúde) e informese está apta ou não para cumprir o serviço militar obrigatório. Informe os totais.
 
-import java.util.Scanner;
 
 import br.edu.up.models.Pessoa13;
 import br.edu.up.Prompt;
 
 public class Ex13 {
     public static void executar(){
-        Scanner leitor = new Scanner(System.in);
-
+        
+        Pessoa13 pessoa = new Pessoa13();
 
         System.out.print("Quantas pessoas deseja verificar? ");
         int numPessoas = Prompt.lerInteiro();
-        leitor.nextLine(); // Limpar o buffer do scanner
+        
 
         int totalAptos = 0;
         int totalHomens = 0;
@@ -25,20 +24,20 @@ public class Ex13 {
             pessoa.setNome(Prompt.lerLinha());
 
             System.out.print("Sexo (M/F): ");
-            pessoa.setSexo(Prompt.lerLinha());
-            leitor.nextLine(); // Limpar o buffer do scanner
+            pessoa.setSexo(Prompt.lerLinha().charAt(0));
+            
 
             System.out.print("Idade: ");
             pessoa.setIdade(Prompt.lerInteiro());
-            leitor.nextLine(); // Limpar o buffer do scanner
+            
 
-            System.out.print("Saúde (true/false): ");
-            pessoa.setSaude() = leitor.nextBoolean();
-            leitor.nextLine(); // Limpar o buffer do scanner
+            System.out.print("Saúde (1 = Saudavel/ 0 = Não Saudavel : ");
+            pessoa.setSaude(Prompt.lerLinha());
+            
 
-            Pessoa13 pessoa = new Pessoa13(nome, sexo, idade, saude);
+            
 
-            if (pessoa.estaApto()) {
+            if (pessoa.estaApto() == "1") {
                 totalAptos++;
             }
 
@@ -51,7 +50,6 @@ public class Ex13 {
         System.out.println("Total de homens: " + totalHomens);
 
 
-        leitor.close();
     }
 
 }

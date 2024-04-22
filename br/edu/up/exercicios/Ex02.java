@@ -11,8 +11,8 @@ public class Ex02 {
         System.out.println("Informe a Distância percorrida: ");
         carro.setDistancia(Prompt.lerDecimal());
         System.out.println("Informe o total de combustivel gasto: ");
-        carro.setDistancia(Prompt.lerDecimal());
-        System.out.println("O Consumo médio de gasolina é de " + carro.calcConsumoMedio() + "KM por Litro");
+        carro.setTotalCombustivelGasto(Prompt.lerDecimal());
+        System.out.println("O Consumo médio de gasolina é de " + carro.calcConsumoMedio() + " KM por Litro");
 
     }
 

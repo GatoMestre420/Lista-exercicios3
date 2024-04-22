@@ -9,12 +9,13 @@ public class Ex09 {
        
 
         int n = 0;
-        IntervaloNumerico numerico = new IntervaloNumerico();
+        IntervaloNumerico[] numerico = new IntervaloNumerico[10];
         
         for(int i = 0; i < 10; i++){
             System.out.println("Informe o " + (i+1) + "º número: ");
-            numerico.setNumero[i] = Prompt.lerInteiro();
-            if(numerico.setNumero([i]) >= 10 && numerico.setNumero([i]) <= 150){
+            numerico[i] = new IntervaloNumerico();
+            numerico[i].setNumero(Prompt.lerInteiro());
+            if(numerico[i].getNumero() >= 10 && numerico[i].getNumero() <= 150){
                 n++;
             }
         }

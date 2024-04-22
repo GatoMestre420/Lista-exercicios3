@@ -1,13 +1,15 @@
 package br.edu.up.models;
 public class IntervaloNumerico {
 
-    private int numero[];
+    private int numero;
 
-    public int[] getNumero() {
+
+
+    public int getNumero() {
         return numero;
     }
 
-    public void setNumero(int[] numero) {
+    public void setNumero(int numero) {
         this.numero = numero;
     }
 

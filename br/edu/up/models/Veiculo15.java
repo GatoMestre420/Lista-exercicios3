@@ -4,13 +4,19 @@ public class Veiculo15 {
     private String combustivel;
     private double valor;
 
+    // Constructors -----------------------------------------
+
     public Veiculo15(String combustivel, double valor) {
         this.combustivel = combustivel;
         this.valor = valor;
     }
 
 
-    
+    public Veiculo15() {
+    }
+
+
+    // Gettters --------------------------------------------
 
     public String getCombustivel() {
         return combustivel;
@@ -25,7 +31,7 @@ public class Veiculo15 {
 
 
     
-
+    // Setters --------------------------------------------
 
     public void setCombustivel(String combustivel) {
         this.combustivel = combustivel;
